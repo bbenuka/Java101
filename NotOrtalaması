@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        //İlk önce değişkenleri oluşturalım.
+        int matematik, turkce, kimya, fizik, biyoloji;
+
+        //Bir Scanner sınıfı tanımlayalım. a yerine herhangi bir şey yazabiliriz.
+        Scanner a = new Scanner(System.in);
+
+        //Kullanıcıdan değer alalım.
+        System.out.print("Matematik notunuzu yazınız: ");    //Kullanıcının ekranında çıkacak mesaj.
+        matematik = a.nextInt();                             //Kullanıcının girdiği değer.
+
+        System.out.print("Türkçe notunuzu yazınız: ");
+        turkce = a.nextInt();
+
+        System.out.print("Kimya notunuzu yazınız: ");
+        kimya = a.nextInt();
+
+        System.out.print("Fizik notunuzu yazınız: ");
+        fizik = a.nextInt();
+
+        System.out.print("Kimya notunuzu yazınız: ");
+        biyoloji = a.nextInt();
+
+        int toplam = (matematik+turkce+fizik+kimya+biyoloji);
+        double sonuc = toplam / 5;                           //Tanımlanan ders sayısına göre bölüm değişecektir. Ortalama tamsayı çıkmayabilir bu yüzden double tipinde tanımladık.
+
+        System.out.println("Not ortalamanız: "+sonuc);
+    }}
