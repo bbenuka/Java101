@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        int  km;
+        double baslangic = 10 ,minTutar = 20 , kmBasi = 2.20, toplam ;
+
+        Scanner input=new Scanner(System.in);
+
+        System.out.print("Mesafeyi kilometre cinsinden giriniz: ");
+        km = input.nextInt();
+
+        toplam = (km * kmBasi);
+
+        if (toplam<20) {
+            toplam = (km * kmBasi + minTutar);
+        }
+
+        else {
+            toplam = (km * kmBasi);
+        }
+
+        System.out.print("Toplam tutar: " + toplam);
+    }
+}
